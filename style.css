@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background-image: linear-gradient(315deg, #f6ebe6, #aee1f9);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border: 2px solid black;
+}
+
+.title h1 {
+	/* margin-bottom: 0.5rem; */
+	text-align: center;
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 3rem;
+}
+
+.title p {
+	margin: 0.5rem 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#input {
+	margin-top: 1rem;
+	width: 90%;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.input h2 {
+	margin: 0.5rem 0;
+	text-align: center;
+}
+
+.hourglass-img {
+	/* background-color: yellow; */
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	max-width: 40%;
+}
+
+img {
+	cursor: pointer;
+	margin: 1rem 0;
+	width: 20%;
+}
+
+.answer {
+	margin: 1rem auto;
+	/* margin-left: 3rem; */
+	padding: 2rem;
+	/* background-color: yellow; */
+	width: 80%;
+	font-size: 1rem;
+	font-weight: bold;
+	/* padding: 0 4rem; */
+	/* border: 2px solid black; */
+
+	text-align: center;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.spin-animation {
+	animation: spin 1s 1;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
